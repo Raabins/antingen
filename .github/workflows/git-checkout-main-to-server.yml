@@ -24,4 +24,4 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: '*.*'
-        target: /var/www/html
+        target: /var/www/healthloving.nodehill.com/public_html
