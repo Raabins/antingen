@@ -23,5 +23,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: '*.*'
-        target: /var/www/html
+        source: '*'
+        target: /var/www/healthloving.nodehill.com/public_html
+        rm: true
+        overwrite: true
