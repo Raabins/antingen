@@ -26,5 +26,4 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_PORT: ${{ secrets.SSH_PORT }}          
 
-      - name: Deploy from dev (Important read how to link npm for sudoers https://stackoverflow.com/questions/62863080/github-actions-err-bash-line-3-npm-command-not-found )
         run: ssh dev 'cd /path/to/your/dev/deployment/directory && git fetch && git reset --hard origin/dev && npm install'   
